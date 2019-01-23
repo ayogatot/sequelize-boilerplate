@@ -43,3 +43,15 @@ yarn start
 ```
 
 Access API server by opening http://localhost:8000
+
+## API Endpoints
+
+`/api/v1/users`
+
+| Endpoint            | HTTP   | Description       | Body                   |
+| ------------------- | ------ | ----------------- | ---------------------- |
+| `/api/v1/users/`    | GET    | Get all users     | -                      |
+| `/api/v1/users/`    | POST   | Create user       | `name`, `age` ,`email` |
+| `/api/v1/users/:id` | GET    | Get user by id    | -                      |
+| `/api/v1/users/:id` | PUT    | Update user by id | `name`, `age`, `email` |
+| `/api/v1/users/:id` | DELETE | DELETE user by id |                        |
